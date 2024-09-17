@@ -8,22 +8,14 @@ export default function contact() {
       <View>
         <Image
           style={styles.stretch}
-          source={require('../burger.jpg')}
+          source={require('../contact.png')}
         />
       </View>
 
       <View style={styles.section1}>
-        <Text>Lorem ipsum odor amet, consectetuer adipiscing elit. Vestibulum nostra hac sodales praesent, tincidunt facilisis potenti feugiat. Proin orci tempus metus curabitur magna duis. Ridiculus porttitor potenti interdum curae eleifend fringilla amet. Curae tellus cursus potenti nullam fames senectus bibendum. Sagittis magnis bibendum aliquet est tortor commodo aenean mus. Fames integer quam est luctus montes sit curabitur nascetur. Ut nunc metus interdum consectetur tincidunt laoreet.
-
-          Cras eleifend facilisi quam ullamcorper, vulputate iaculis rhoncus arcu. Mollis primis dictum gravida gravida blandit amet dictum id praesent. Taciti ullamcorper volutpat quis quam erat senectus commodo magna. Sed ornare hac nisl tellus et dolor mattis gravida. Habitant malesuada leo laoreet cras est. Purus vitae sagittis platea at nisi. Laoreet in vestibulum lacinia dis quis iaculis ipsum pretium fringilla. Maximus ante eros parturient nisl penatibus tortor dis. Fames rhoncus magnis ipsum in leo commodo diam erat. Duis egestas aenean lectus rutrum mollis penatibus.
-
-          Bibendum risus ante tempor aliquet faucibus tristique libero scelerisque. Ut urna suscipit euismod aliquam dapibus facilisi magna. Nulla commodo amet lacinia montes duis. Porta varius porttitor tellus lectus mauris urna lacinia? Dignissim dui velit rhoncus torquent aenean. Curabitur dui congue sed eleifend tempus pellentesque iaculis felis. Ultrices tempus cursus quam laoreet ullamcorper congue.</Text>
-
-        <Button
-          title="Press me"
-          color="#f194ff"
-          onPress={() => Alert.alert('Button with adjusted color pressed')}
-        />
+        <Text style={styles.contactText} >Phone number: 1-888-888-8888</Text>
+        <Text style={styles.contactText}>Email: johnjoe@gmail.com</Text>
+        <Text style={styles.contactText}>Socials: Instagram YouTube Twitter</Text>
       </View>
       <View style={styles.section2}></View>
     </View>
@@ -34,18 +26,22 @@ export default function contact() {
 const styles = StyleSheet.create({
 
   container: {
-    padding: 20,
+    padding: 10,
     flexDirection: 'column',
     justifyContent: 'space-around',
 
   },
   titleText: {
-    fontSize: 20,
+    fontSize: 30,
     fontWeight: 'bold',
   },
 
+  contactText: {
+    fontSize: 20,
+  },
+
   section1: {
-    backgroundColor: '#32ff',
+    backgroundColor: '#b4b8b5',
     padding: 10,
     width: 1800,
     height: 300,

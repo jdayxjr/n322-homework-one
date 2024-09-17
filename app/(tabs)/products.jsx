@@ -4,11 +4,19 @@ import React from 'react'
 export default function products() {
   return (
     <View style={styles.container}>
-      <Text style={styles.titleText}>Products: Our burgers</Text>
-      <View>
+      <Text style={styles.titleText}>Products: Our burgers and more!</Text>
+      <View style={styles.imageBox}>
         <Image
-          style={styles.stretch}
+          style={styles.images}
           source={require('../burger.jpg')}
+        />
+        <Image
+          style={styles.images}
+          source={require('../fries.jpg')}
+        />
+        <Image
+          style={styles.images}
+          source={require('../shake.jpg')}
         />
       </View>
 
@@ -19,11 +27,7 @@ export default function products() {
 
           Bibendum risus ante tempor aliquet faucibus tristique libero scelerisque. Ut urna suscipit euismod aliquam dapibus facilisi magna. Nulla commodo amet lacinia montes duis. Porta varius porttitor tellus lectus mauris urna lacinia? Dignissim dui velit rhoncus torquent aenean. Curabitur dui congue sed eleifend tempus pellentesque iaculis felis. Ultrices tempus cursus quam laoreet ullamcorper congue.</Text>
 
-        <Button
-          title="Press me"
-          color="#f194ff"
-          onPress={() => Alert.alert('Button with adjusted color pressed')}
-        />
+
       </View>
 
       <View style={styles.section2}></View>
@@ -35,13 +39,13 @@ export default function products() {
 const styles = StyleSheet.create({
 
   container: {
-    padding: 20,
+    padding: 10,
     flexDirection: 'column',
     justifyContent: 'space-around',
 
   },
   titleText: {
-    fontSize: 20,
+    fontSize: 30,
     fontWeight: 'bold',
   },
 
@@ -58,11 +62,17 @@ const styles = StyleSheet.create({
     height: 100,
   },
 
-  stretch: {
+  images: {
     width: 200,
     height: 200,
     resizeMode: 'stretch',
   },
 
+  imageBox: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
 
-});
+  },
+
+
+}); 

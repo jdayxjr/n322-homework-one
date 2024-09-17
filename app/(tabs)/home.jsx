@@ -8,15 +8,7 @@ export default function home() {
       <View style={styles.imageBox}>
         <Image
           style={styles.images}
-          source={require('../burger.jpg')}
-        />
-        <Image
-          style={styles.images}
-          source={require('../burger.jpg')}
-        />
-        <Image
-          style={styles.images}
-          source={require('../burger.jpg')}
+          source={require('../home.png')}
         />
       </View>
 
@@ -42,13 +34,13 @@ export default function home() {
 const styles = StyleSheet.create({
 
   container: {
-    padding: 20,
+    padding: 10,
     flexDirection: 'column',
     justifyContent: 'space-around',
 
   },
   titleText: {
-    fontSize: 20,
+    fontSize: 30,
     fontWeight: 'bold',
   },
 
