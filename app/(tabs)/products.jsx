@@ -10,14 +10,20 @@ export default function products() {
           style={styles.images}
           source={require('../burger.jpg')}
         />
+        <Text>Double Cheese Burger</Text>
+        <Text>Price: 3.99</Text>
         <Image
           style={styles.images}
           source={require('../fries.jpg')}
         />
+        <Text>Cheese Fries</Text>
+        <Text>Price: 1.00</Text>
         <Image
           style={styles.images}
           source={require('../shake.jpg')}
         />
+        <Text>Milkshake</Text>
+        <Text>Price: 2.99</Text>
       </View>
 
       <View style={styles.section1}>

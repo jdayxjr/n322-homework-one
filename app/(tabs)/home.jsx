@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Image, Button, Alert } from 'react-native'
+import { View, Text, StyleSheet, Image, TouchableOpacity, } from 'react-native'
 import React from 'react'
 
 export default function home() {
@@ -19,11 +19,9 @@ export default function home() {
 
           Bibendum risus ante tempor aliquet faucibus tristique libero scelerisque. Ut urna suscipit euismod aliquam dapibus facilisi magna. Nulla commodo amet lacinia montes duis. Porta varius porttitor tellus lectus mauris urna lacinia? Dignissim dui velit rhoncus torquent aenean. Curabitur dui congue sed eleifend tempus pellentesque iaculis felis. Ultrices tempus cursus quam laoreet ullamcorper congue.</Text>
 
-        <Button
-          title="Press me"
-          color="#f194ff"
-          onPress={() => Alert.alert('Button with adjusted color pressed')}
-        />
+        <TouchableOpacity style={styles.button}>
+          <Text style={styles.buttonText}>Press Me</Text>
+        </TouchableOpacity>
       </View>
       <View style={styles.section2}></View>
     </View>
@@ -67,6 +65,21 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
 
+  },
+
+
+  button: {
+    height: 50,
+    width: 100,
+    backgroundColor: 'red',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 10, // optional, for rounded corners
+  },
+  buttonText: {
+    color: 'white',
+    fontSize: 18,
+    fontWeight: 'bold',
   },
 
 
