@@ -13,11 +13,9 @@ export default function home() {
       </View>
 
       <View style={styles.section1}>
-        <Text>Lorem ipsum odor amet, consectetuer adipiscing elit. Vestibulum nostra hac sodales praesent, tincidunt facilisis potenti feugiat. Proin orci tempus metus curabitur magna duis. Ridiculus porttitor potenti interdum curae eleifend fringilla amet. Curae tellus cursus potenti nullam fames senectus bibendum. Sagittis magnis bibendum aliquet est tortor commodo aenean mus. Fames integer quam est luctus montes sit curabitur nascetur. Ut nunc metus interdum consectetur tincidunt laoreet.
+        <Text>At Burger Joint, we’re all about simple, delicious food done right. Our menu is focused on the classics — juicy, mouthwatering burgers, crispy fries, and thick, creamy milkshakes that bring all the flavors together. Whether you’re a fan of our Double Cheese Burger or craving a cool milkshake to wash it down, we’ve got you covered.
 
-          Cras eleifend facilisi quam ullamcorper, vulputate iaculis rhoncus arcu. Mollis primis dictum gravida gravida blandit amet dictum id praesent. Taciti ullamcorper volutpat quis quam erat senectus commodo magna. Sed ornare hac nisl tellus et dolor mattis gravida. Habitant malesuada leo laoreet cras est. Purus vitae sagittis platea at nisi. Laoreet in vestibulum lacinia dis quis iaculis ipsum pretium fringilla. Maximus ante eros parturient nisl penatibus tortor dis. Fames rhoncus magnis ipsum in leo commodo diam erat. Duis egestas aenean lectus rutrum mollis penatibus.
-
-          Bibendum risus ante tempor aliquet faucibus tristique libero scelerisque. Ut urna suscipit euismod aliquam dapibus facilisi magna. Nulla commodo amet lacinia montes duis. Porta varius porttitor tellus lectus mauris urna lacinia? Dignissim dui velit rhoncus torquent aenean. Curabitur dui congue sed eleifend tempus pellentesque iaculis felis. Ultrices tempus cursus quam laoreet ullamcorper congue.</Text>
+          We believe in quality over quantity, which is why we keep our menu straightforward but packed with flavor. Come by and grab a burger, fries, and a shake today — your taste buds will thank you!</Text>
 
         <TouchableOpacity style={styles.button}>
           <Text style={styles.buttonText}>Press Me</Text>

@@ -1,63 +1,79 @@
-import { View, Text, StyleSheet, Image, Button, Alert } from 'react-native'
-import React from 'react'
 
-export default function contact() {
+
+import React from 'react';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
+
+const ContactPage = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.titleText}>Contact Us</Text>
-      <View>
-        <Image
-          style={styles.stretch}
-          source={require('../contact.png')}
-        />
-      </View>
+      <Text style={styles.heading}>Contact Us</Text>
 
-      <View style={styles.section1}>
-        <Text style={styles.contactText} >Phone number: 1-888-888-8888</Text>
-        <Text style={styles.contactText}>Email: johnjoe@gmail.com</Text>
-        <Text style={styles.contactText}>Socials: Instagram YouTube Twitter</Text>
-      </View>
-      <View style={styles.section2}></View>
+      <Text style={styles.label}>Email:</Text>
+      <TextInput
+        style={styles.input}
+        placeholder="Enter your email"
+        keyboardType="email-address"
+      />
+
+      <Text style={styles.label}>Message:</Text>
+      <TextInput
+        style={[styles.input, styles.textArea]}
+        placeholder="Enter your message"
+        multiline={true}
+        numberOfLines={5}
+      />
+
+      <TouchableOpacity style={styles.button}>
+        <Text style={styles.buttonText}>Submit</Text>
+      </TouchableOpacity>
     </View>
-
-  )
-}
+  );
+};
 
 const styles = StyleSheet.create({
-
   container: {
-    padding: 10,
-    flexDirection: 'column',
-    justifyContent: 'space-around',
-
+    flex: 1,
+    padding: 20,
+    justifyContent: 'center',
+    backgroundColor: '#f8f8f8',
   },
-  titleText: {
-    fontSize: 30,
+  heading: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginBottom: 20,
+  },
+  label: {
+    fontSize: 16,
+    marginBottom: 8,
+  },
+  input: {
+    height: 40,
+    borderColor: '#ccc',
+    borderWidth: 1,
+    borderRadius: 5,
+    paddingHorizontal: 10,
+    marginBottom: 20,
+  },
+  textArea: {
+    height: 100,
+    textAlignVertical: 'top', // for multiline input to start from top
+  },
+  button: {
+    backgroundColor: 'red',
+    width: 100,    // Set width
+    height: 40,    // Set height
+    borderRadius: 5,
+    justifyContent: 'center', // Center text vertically
+    alignItems: 'center',     // Center text horizontally
+    alignSelf: 'center',      // Center the button
+    marginTop: 10,
+  },
+  buttonText: {
+    color: '#fff',
+    fontSize: 16,
     fontWeight: 'bold',
   },
-
-  contactText: {
-    fontSize: 20,
-  },
-
-  section1: {
-    backgroundColor: '#b4b8b5',
-    padding: 10,
-    width: 1800,
-    height: 300,
-  },
-
-  section2: {
-
-    width: 1800,
-    height: 100,
-  },
-
-  stretch: {
-    width: 200,
-    height: 200,
-    resizeMode: 'stretch',
-  },
-
-
 });
+
+export default ContactPage;
